@@ -16,4 +16,35 @@ public class Movie {
         this.genre = genre;
         this.actors = new ArrayList<>();
     }
+
+    //Methods to add and retrieve actors
+    public void addActor(String actor) {
+        actors.add(actor);
+    }
+
+    public List<String> getActors() {
+        return actors;
+    }
+
+    //Getter Methods for other attributes
+    public int getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getReleaseYear() {
+        return releaseYear;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    @Override
+    public String toString() {
+        return "Title: " + title + ", Release Year: " + releaseYear + ", Genre: " + genre + ", Actors: " + actors;
+    }
 }
